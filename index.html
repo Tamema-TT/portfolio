@@ -1,12 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="dracula" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamema</title>
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4951b7ad3b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div>
+        <!-- Nav bar starts -->
+        <nav class="sticky top-0 z-50">
+            <div class="navbar bg-neutral px-6 py-4">
+                <div class="flex-1">
+                    <div class="avatar">
+                        <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src="images/pass.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none">
+                    <ul class="menu menu-horizontal pr-20">
+                        <li><a href="/#me">Me</a></li>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a>Resume</a></li>
+                        <li><a>Contact Me</a></li>
+                    </ul>
+                    <ul class="ml-20 menu menu-horizontal p-0">
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Nav bar ends -->
+        <!-- Home starts -->
+        <div class="px-6 py-4" id="me">
+            <div class="min-h-screen bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse ">
+                    <img src="images/me.png" class="max-w-sm h-1/5 rounded-lg shadow-2xl"/>
+                    <div>
+                        <p class="py-6">Welcome to my den</p>
+                        <h1 class="text-6xl font-bold">Hi, I am
+                            <span class="text-secondary">Tamema</span>
+                        </h1>
+                        <h1 class="text-2xl font-bold mt-4">Computer Sceience Engineer</h1>
+                        <p class="py-6"> An individual who is fascinated to discover and learn new skills. “Stop wishing, start doing”, is a motto I live by. I am a diligent individual who believes in showing own worth through work.</p>
+                        <button class="btn btn-primary">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Home Ends -->
+        <!-- Portfolio Starts -->
+        <div class="px-6 py-4" id="portfolio">
+            <div class="min-h-screen bg-base-200">
+                <div class="">
+                    <div class="flex-col text-accent text-center">
+                        <p class="text-accent">Visit My Portfolio</p>
+                        <h1 class="text-5xl font-bold mt-4">Portfolio</h1>
+                    </div>
+                    <div class="grid lg:grid-cols-3 gap-4 mt-6 md:grid-cols-6 sm:grid-cols-12">
+                        <div class="card bg-base-100 shadow-xl image-full">
+                            <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Notelify</h2>
+                                <p>A note taking app that enables users to take, edit, and delete notes</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-accent">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl image-full">
+                            <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Notelify</h2>
+                                <p>A note taking app that enables users to take, edit, and delete notes</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-accent">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl image-full">
+                            <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Notelify</h2>
+                                <p>A note taking app that enables users to take, edit, and delete notes</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-accent">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl image-full">
+                            <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Notelify</h2>
+                                <p>A note taking app that enables users to take, edit, and delete notes</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-accent">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl image-full">
+                            <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Notelify</h2>
+                                <p>A note taking app that enables users to take, edit, and delete notes</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-accent">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl image-full">
+                            <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Notelify</h2>
+                                <p>A note taking app that enables users to take, edit, and delete notes</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-accent">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Ends -->
+        <!-- Resume starts -->
+        <!-- <div class="btn-group btn-group-vertical lg:btn-group-horizontal flex justify-center my-6 grid grid-cols-3 tabs tabs-boxed px-6">
+            <input type="radio" name="options" data-title="Education" class="btn tab" checked/>
+            <input type="radio" name="options" data-title="Skills" class="btn tab"  />
+            <input type="radio" name="options" data-title="Experience" class="btn tab" />
+        </div> -->
+        <div class="px-6">
+            <div class="flex-col text-accent text-center">
+                <h1 class="text-5xl font-bold my-4">My Resume</h1>
+            </div>
+            <div class="tabs tabs-boxed grid grid-cols-3">
+                <button class="btn border-none btn-neutral tab tab-active" id="show-education" onclick="tabActive('education', 'show-education')">Education</button> 
+                <button class="btn border-none tab" id="show-skills" onclick="tabActive('skills', 'show-skills')">Skills</button> 
+                <button class="btn border-none tab" id="show-experience" onclick="tabActive('experience', 'show-experience')">Experience</button>
+            </div>
+            <div id="education" class="content">
+                <h2>London</h2>
+                <p>London is the capital of England.</p>
+            </div>
+            <div id="skills" class="content" style="display:none">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+            <div id="experience" class="content" style="display:none">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+        <!-- Resume Ends -->
+    </div>   
+    <script src="/js/tab-button.js"></script>
 </body>
 </html>

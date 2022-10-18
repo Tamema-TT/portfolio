@@ -28,27 +28,46 @@
     <div>
         <!-- Nav bar starts -->
         <nav class="sticky top-0 z-50">
-            <div class="navbar bg-neutral px-6 py-4">
-                <div class="flex-1">
-                    <div class="avatar">
-                        <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                            <img src="images/pass.jpg" />
+            <div class="navbar bg-neutral px-6 py-4 flex items-start justify-between">
+                <div class="lg:flex-row lg:justify-between lg:items-center flex-col  lg:w-full">
+                    <div class="flex-1">
+                        <div class="avatar">
+                            <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <img src="images/pass.jpg" />
+                            </div>
                         </div>
                     </div>
+                    <div id="show-nav" class="lg:inline-flex hidden lg:mr-20">
+                        <ul class="lg:inline-flex">
+                            <li class="lg:mr-4 mb-2">
+                                <a class="active:bg-pink-400 p-2 rounded" href="/#me">Me</a>
+                            </li>
+                            <li class="lg:mr-4 mb-2 focus:text-info">
+                                <a class="active:bg-pink-400 p-2 rounded" href="/#portfolio">Portfolio</a>
+                            </li>
+                            <li class="lg:mr-4 mb-2">
+                                <a class="active:bg-pink-400 p-2 rounded" href="/#resume">Resume</a>
+                            </li>
+                            <li class="lg:mr-16 mb-2">
+                                <a class="active:bg-pink-400 p-2 rounded" href="/#contact">Contact Me</a>
+                            </li>
+                            <li class="lg:mx-4 mb-2">
+                                <a class="active:bg-pink-400 p-2 rounded" href="https://www.linkedin.com/in/tamema-tama" target="_blank">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="active:bg-pink-400 p-2 rounded" href="https://github.com/Tamema-TT" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="flex-none">
-                    <ul class="menu menu-horizontal pr-20">
-                        <li><a href="/#me">Me</a></li>
-                        <li><a href="/#portfolio">Portfolio</a></li>
-                        <li><a href="/#resume">Resume</a></li>
-                        <li><a href="/#contact">Contact Me</a></li>
-                    </ul>
-                    <ul class="ml-20 menu menu-horizontal p-0">
-                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a><i class="fa-brands fa-github"></i></a></li>
-                    </ul>
-                    
-                </div>
+                <button class="btn lg:hidden" name="burger" onclick="toggleNav(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </button>
+
             </div>
         </nav>
         <!-- Nav bar ends -->
@@ -74,67 +93,79 @@
             <!-- Portfolio Starts -->
             <div id="portfolio" class="min-h-screen bg-base-200 px-6 py-4 rounded-lg   my-8">
                 <div class="flex-col text-info text-center">
-                    <p class="text-info">Visit My Portfolio</p>
-                    <h1 class="text-5xl font-bold mt-4">Portfolio</h1>
+                    <p class="text-info">Visit My Works</p>
+                    <h1 class="text-5xl font-bold mt-4 uppercase">Portfolio</h1>
                 </div>
-                <div class="grid lg:grid-cols-3 gap-4 mt-6 md:grid-cols-6 sm:grid-cols-12">
+                <div class="grid lg:grid-cols-3 gap-4 mt-6 md:grid-cols-2">
                     <div class="card bg-base-100 shadow-xl image-full">
                         <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
                         <div class="card-body">
                             <h2 class="card-title">Notelify</h2>
                             <p>A note taking app that enables users to take, edit, and delete notes</p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-accent">Details</button>
+                                <a href="https://notelify-03.netlify.app/">
+                                    <button class="btn btn-secondary text-base-300">Demo</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="card bg-base-100 shadow-xl image-full">
-                        <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                        <figure><img class="rounded-xl" src="/images/e-commerce-bootstrap.jpg"  alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Notelify</h2>
-                            <p>A note taking app that enables users to take, edit, and delete notes</p>
+                            <h2 class="card-title">Panda E-commerce</h2>
+                            <p>A responsive e-commerce site styled with bootstrap for buying accessories</p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-accent">Details</button>
+                                <a href="https://panda-web03.netlify.app/" target="_blank">
+                                    <button class="btn btn-secondary text-base-300">Demo</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="card bg-base-100 shadow-xl image-full">
-                        <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                        <figure><img class="rounded-xl" src="/images/e-commerce-tailwind.jpg"  alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Notelify</h2>
-                            <p>A note taking app that enables users to take, edit, and delete notes</p>
+                            <h2 class="card-title">Penguin E-commerce</h2>
+                            <p>An e-commerce site styled with tailwind css for buying clothes</p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-accent">Details</button>
+                                <a href="https://penguin-03.netlify.app/" target="_blank">
+                                    <button class="btn btn-secondary text-base-300">Demo</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="card bg-base-100 shadow-xl image-full">
-                        <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                        <figure><img class="rounded-xl" src="/images/calculator-js.jpg"  alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Notelify</h2>
-                            <p>A note taking app that enables users to take, edit, and delete notes</p>
+                            <h2 class="card-title">Calculator</h2>
+                            <p>A calculator built with Javascript and styled with tailwind css</p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-accent">Details</button>
+                                <a href="https://tamema-tt.github.io/js-simple-calculator/" target="_blank">
+                                    <button class="btn btn-secondary text-base-300">Demo</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="card bg-base-100 shadow-xl image-full">
-                        <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                        <figure><img class="rounded-xl" src="/images/bank-js.jpg"  alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Notelify</h2>
-                            <p>A note taking app that enables users to take, edit, and delete notes</p>
+                            <h2 class="card-title">Banking System</h2>
+                            <p>A simple app built with Javascript that fascilitates users with the deposit and withdrawal system of banks.</p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-accent">Details</button>
+                                <a href="https://bank-deposit-withdraw-03.netlify.app/" target="_blank">
+                                    <button class="btn btn-secondary text-base-300">Demo</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="card bg-base-100 shadow-xl image-full">
-                        <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                        <figure><img class="rounded-xl" src="/images/expense-calculator-js.jpg"  alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Notelify</h2>
-                            <p>A note taking app that enables users to take, edit, and delete notes</p>
+                            <h2 class="card-title">Expense Calculator</h2>
+                            <p>An app enabling users to calculate their expenses</p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-accent">Details</button>
+                                <a href="https://tamema-tt.github.io/js-expense-calculator/" target="_blank">
+                                    <button class="btn btn-secondary text-base-300">Demo</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -142,7 +173,7 @@
             </div>
             <!-- Portfolio Ends -->
             <!-- Resume starts -->
-            <div id="resume" class="px-6 bg-base-200 px-6 py-4 rounded-lg   my-8">
+            <div id="resume" class="px-6 bg-base-200 py-4 rounded-lg   my-8">
                 <div class="flex-col text-sky-200 text-center">
                     <h1 class="text-5xl font-bold my-4 uppercase">My Resume</h1>
                 </div>
@@ -152,172 +183,227 @@
                     <button class="btn border-none tab" id="show-experience" onclick="tabActive('experience', 'show-experience')">Experience</button>
                 </div>
                 <div class="mt-10">
-                    <div id="education" class="border-l-4 content">
+                    <div id="education" class="md:border-l-4 content">
                         <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                             <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0"></div>
-                            <div class="absolute">2018-2022</div>
-                            <div class="w-24 ml-20 h-1 bg-slate-500 z-0 absolute "></div>
-                            <div class="w-2/3 ml-44 flex flex-col px-12 py-6 bg-base-300 text-violet-300 rounded mb-10 space-y-4 md:space-y-0 drop-shadow-2xl">
-                                <div class="mb-6 flex items-center">
-                                    <h1 class="text-2xl font-bold mr-10">BSC in Computer Science Engineering</h1>
-                                    <h1 class="text-lg font-bold p-2 border-stone-700 border rounded-lg ml-20">3.87 / 4.00</h1>
+                            <div class="md:absolute">2018-2022</div>
+                            <div class="w-24 ml-20 h-1 bg-slate-500 z-0 absolute md:block hidden"></div>
+                            <div class="md:w-2/3 w-auto md:border-none border md:ml-44 flex flex-col lg:px-12 px-2 py-6 bg-base-300 text-violet-300 rounded mb-10 space-y-4 md:space-y-0 drop-shadow-2xl">
+                                <div class="mb-6 lg:flex grid grid-cols-1 items-center">
+                                    <h1 class="lg:text-2xl font-bold mr-10">BSC in Computer Science Engineering</h1>
+                                    <h1 class="text-lg w-auto font-bold p-2 border-stone-700 border rounded-lg ml-20 lg:block hidden">3.87 / 4.00</h1>
                                 </div>
                                 <h2 class="text-lg">Department of Electrical and Computer Engineering,</h2>
                                 <h2 class="text-lg">North South University</h2>
+                                <h1 class="w-1/2 mx-auto text-lg font-bold p-2 border-stone-700 border rounded-lg lg:hidden block text-center">3.87 / 4.00</h1>
                             </div>
                         </div>
                         <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                             <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0"></div>
-                            <div class="absolute">2013-2015</div>
-                            <div class="w-24 ml-20 h-1 bg-slate-500 z-0 absolute"></div>
-                            <div class="ml-44 w-2/3 flex flex-col px-12 py-6 bg-base-300 text-secondary rounded drop-shadow-2xl mb-10 space-y-4 md:space-y-0">
-                                <div class="mb-6 flex items-center">
-                                    <h1 class="text-2xl font-bold mr-10">Higher Secondary Certificate</h1>
-                                    <h1 class="text-lg font-bold p-2 border-stone-700 border rounded-lg ml-44">4.17 / 5.00</h1> 
+                            <div class="md:absolute">2013-2015</div>
+                            <div class="w-24 ml-20 h-1 bg-slate-500 z-0 absolute md:block hidden"></div>
+                            <div class="md:w-2/3 w-auto md:border-none border md:ml-44 flex flex-col lg:px-12 px-2 py-6 bg-base-300 text-violet-300 rounded mb-10 space-y-4 md:space-y-0 drop-shadow-2xl">
+                                <div class="mb-6 lg:flex grid grid-cols-1 items-center">
+                                    <h1 class="lg:text-2xl font-bold mr-10">Higher Secondary Certificate</h1>
+                                    <h1 class="text-lg w-auto font-bold p-2 border-stone-700 border rounded-lg ml-44 lg:block hidden">4.17 / 5.00</h1>
                                 </div>
                                 <h2 class="text-lg">Science Group</h2>
                                 <h2 class="text-lg">Chandpur Govt. Girls College</h2>
-                                
+                                <h1 class="w-1/2 mx-auto text-lg text-center font-bold p-2 border-stone-700 border rounded-lg lg:hidden block">4.17 / 5.00</h1>
                             </div>
                         </div>
                         <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                             <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0"></div>
-                            <div class="absolute">2018-2022</div>
-                            <div class="w-24 ml-20 h-1 bg-slate-500 z-0 absolute "></div>
-                            <div class="ml-44 w-2/3 flex flex-col px-12 py-6 bg-base-300 text-secondary drop-shadow-2xl rounded mb-10 space-y-4 md:space-y-0">
-                                <div class="mb-6 flex items-center">
-                                    <h1 class="text-2xl font-bold mr-10">Secondary School Certificate</h1>
-                                    <h1 class="text-lg font-bold p-2 border-stone-700 border rounded-lg ml-44">5.00 / 5.00</h1> 
+                            <div class="md:absolute">2011-2013</div>
+                            <div class="w-24 ml-20 h-1 bg-slate-500 z-0 absolute md:block hidden"></div>
+                            <div class="md:w-2/3 w-auto md:border-none border md:ml-44 flex flex-col lg:px-12 px-2 py-6 bg-base-300 text-violet-300 rounded mb-10 space-y-4 md:space-y-0 drop-shadow-2xl">
+                                <div class="mb-6 lg:flex grid grid-cols-1 items-center">
+                                    <h1 class="lg:text-2xl font-bold mr-10">Secondary School Certificate</h1>
+                                    <h1 class="text-lg w-auto font-bold p-2 border-stone-700 border rounded-lg ml-44 lg:block hidden">5.00 / 5.00</h1>
                                 </div>
                                 <h2 class="text-lg">Science Group</h2>
                                 <h2 class="text-lg">Matripith Govt. Girls' High School, Chandpur</h2>
+                                <h1 class="w-1/2 mx-auto text-lg text-center font-bold p-2 border-stone-700 border rounded-lg lg:hidden block">5.00 / 5.00</h1>
                             </div>
                         </div>
                     </div>
                     <div id="skills" class="relative content" style="display:none">
-                        <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 52%"></div>
-                        <div class="grid grid-cols-2 space-x-10 flex items-center">
-                            <div class="border">
-                                <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Javascript
-                                        <span class="absolute left-96 ml-44">90%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="90" max="100"></progress>
+                        <div class="border-2-2 absolute border-opacity-20 border-gray-500 h-full border md:block hidden" style="left: 52%"></div>
+                        <div class="grid md:grid-cols-2 space-x-10 md:items-center justify-start">
+                            <h1 class="text-2xl font-bold mb-4 md:hidden block">Programming Languages</h1>
+                            <div id="skills flex">
+                                <div id="skill" class="flex flex-col mb-4">
+                                    <div class="relative flex justify-between" style="width: 90%">
+                                        <h3>Javascript</h3>
+                                        <h3>90%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 90%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Python
-                                        <span class="absolute left-96 ml-40">88%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="88" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 88%">
+                                        <h3>Python</h3>
+                                        <h3>88%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 88%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">C++
-                                        <span class="absolute left-96 ml-36">85%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="85" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 85%">
+                                        <h3>C++</h3>
+                                        <h3>85%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 85%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">C
-                                        <span class="absolute left-80 ml-44">80%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="80" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 80%">
+                                        <h3>C</h3>
+                                        <h3>80%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 80%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Java
-                                        <span class="absolute left-80 ml-36">75%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="75" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 75%">
+                                        <h3>Java</h3>
+                                        <h3>75%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 75%"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <h1 class="text-2xl font-bold mb-4">Programming Languages</h1>
+                            <h1 class="text-2xl font-bold mb-4 hidden md:block">Programming Languages</h1>
 
-                            <h1 class="text-2xl font-bold mb-4 text-right">Front-end</h1>
+                            <h1 class="text-2xl font-bold mb-4 md:text-right text-center">Front-end</h1>
                             <div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">HTML
-                                        <span class="absolute left-96 ml-40">95%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="95" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 95%">
+                                        <h3>HTML</h3>
+                                        <h3>95%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 95%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">CSS
-                                        <span class="absolute left-96 ml-36">92%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="92" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 92%">
+                                        <h3>CSS</h3>
+                                        <h3>92%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 92%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Bootstrap
-                                        <span class="absolute left-96 ml-32">88%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="88" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 88%">
+                                        <h3>Bootstrap</h3>
+                                        <h3>88%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 88%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Tailwind CSS
-                                        <span class="absolute left-96 ml-28">85%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="85" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 85%">
+                                        <h3>Tailwind CSS</h3>
+                                        <h3>85%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 85%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Daisy UI
-                                        <span class="absolute left-96 ml-28">85%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="85" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 85%">
+                                        <h3>Daisy UI</h3>
+                                        <h3>85%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 85%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">React.js
-                                        <span class="absolute left-80 ml-36">80%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="80" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 80%">
+                                        <h3>React.js</h3>
+                                        <h3>80%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 80%"></div>
+                                    </div>
                                 </div>
                             </div>
-
+                            
+                            <h1 class="text-2xl font-bold md:hidden block mb-4 md:text-left text-center">Back-end</h1>
                             <div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">MySQL
-                                        <span class="absolute left-96 ml-20">80%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="80" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 80%">
+                                        <h3>MySQL</h3>
+                                        <h3>80%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 80%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Firebase
-                                        <span class="absolute left-96 ml-6">70%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="70" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 70%">
+                                        <h3>Firebase</h3>
+                                        <h3>70%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 70%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">MongoDB
-                                        <span class="absolute left-72">50%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="50" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 50%">
+                                        <h3>MongoDB</h3>
+                                        <h3>50%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 50%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Django
-                                        <span class="absolute left-72">50%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="50" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 50%">
+                                        <h3>Django</h3>
+                                        <h3>50%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 50%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Node.js
-                                        <span class="absolute left-48">35%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="35" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 35%">
+                                        <h3>Node.js</h3>
+                                        <h3>35%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 35%"></div>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col mb-4">
-                                    <h3 class="relative">Express.js
-                                        <span class="absolute left-48">35%</span>
-                                    </h3>
-                                    <progress class="progress progress-success h-4" value="35" max="100"></progress>
+                                    <div class="relative flex justify-between" style="width: 35%">
+                                        <h3>Express.js</h3>
+                                        <h3>35%</h3>
+                                    </div>
+                                    <div class="bg-base-100 rounded-full h-2.5">
+                                        <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: 35%"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <h1 class="text-2xl font-bold mb-4">Back-end</h1>
+                            <h1 class="text-2xl font-bold mb-4 hidden md:block">Back-end</h1>
                         </div>
                     </div>
-                    <div id="experience" class="border-l-4 content" style="display:none">
+                    <div id="experience" class="md:border-l-4 content" style="display:none">
                         <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                             <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0"></div>
-                            <div class="absolute">Jan 2022-May 2022</div>
-                            <div class="w-24 ml-36 h-1 bg-white z-0 absolute "></div>
-                            <div class="w-2/3 ml-60 flex flex-col px-12 py-6 bg-secondary text-neutral rounded mb-10 space-y-4 md:space-y-0">
+                            <div class="md:absolute">Jan 2022-May 2022</div>
+                            <div class="w-24 ml-36 h-1 bg-slate-500 z-0 absolute md:block hidden"></div>
+                            <div class="md:w-2/3 w-full md:border-none border md:ml-44 flex flex-col lg:px-12 px-2 py-6 rounded mb-10 space-y-4 md:space-y-0 drop-shadow-2xl bg-secondary text-neutral">
                                 <div class="mb-6">
                                     <h1 class="text-2xl font-bold">Undergraduate Teaching Assistant</h1>
                                     <h2 class="text-lg">Department of Mathematics & Physics, North South University</h2>
@@ -342,15 +428,17 @@
             <div id="contact" class="hero min-h-screen bg-base-200 my-8 px-6 py-4 rounded">
                 <div>
                     <h1 class="text-5xl font-bold text-info text-center uppercase">Contact Me</h1>
-                    <div class="hero-content grid grid-cols-3 h-auto">
-                        <div class="card bg-base-100 shadow-xl text-center lg:text-left h-full">
-                            <figure class="px-10 pt-10">
-                                <img src="images/contact.png" alt="Shoes" class="rounded-xl" />
-                            </figure>
+                    <div class="hero-content grid lg:grid-cols-3 h-auto grid-cols-1">
+                        <div class="card bg-base-100 shadow-xl text-center lg:text-left justify-center h-full">
+                            <div class="flex-1">
+                                <figure class="px-10 pt-10 avatar">
+                                    <img src="images/contact.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                            </div>
                             <div class="card-body items-center text-center">
                                 <h2 class="card-title text-primary mb-4">Get in Touch</h2>
                                 <div class="card-actions">
-                                    <button class="btn px-4 py-2">
+                                    <button class="btn lg:px-4 w-full py-2">
                                         <i class="fa-regular fa-paper-plane text-primary mr-4"></i>
                                         <p class="lowercase">tamema.tama@northsouth.edu</p>
                                     </button>
@@ -367,7 +455,7 @@
                                 </div>
                                 <div class="form-control">
                                     <label class="label">
-                                        <span class="label-text text-neutral-content">Phone Number</span>
+                                        <span class="label-text text-neutral-content">Phone</span>
                                     </label>
                                     <input id="phone" type="text" class="input drop-shadow-2xl bg-base-300 focus:outline-none focus:border-sky-300 focus:ring-sky-300" />
                                 </div>

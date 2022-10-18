@@ -45,3 +45,41 @@ const sendEmail = () => {
     )
     .catch((err) => console.log(err));
 }
+
+const toggleNav = e => {
+    let listContainer = document.getElementById('show-nav');
+    let list = document.querySelector('ul');
+    console.log(list);
+    e.name === 'burger'
+    ?
+    ( e.name = 'close', listContainer.classList.remove('hidden'), listContainer.classList.add('block', 'mt-6', 'ml-auto'))
+    : (e.name = 'burger', listContainer.classList.remove('block'), listContainer.classList.add('hidden'))
+    // e.name === 'burger'
+    // ?
+    // ( e.name = 'close', list.classList.remove('hidden'), list.classList.add('block'))
+    // : (e.name = 'burger', list.classList.remove('block'), list.classList.add('hidden'))
+}
+
+// const skillShow = () => {
+//     const skills = [
+//         {name: 'Javascript', per: 90}, 
+//         {name: 'Python', per: 88}
+//     ];
+//     const skillsContainer = document.getElementById('skills');
+//     const skillContainer = document.getElementById('skill');
+//     skills.forEach(skill => {
+//         skillContainer.innerHTML = `
+//                 <h3 class="relative">${skill.name}
+//                     <span class="absolute left-96 ml-44">${skill.per}%</span>
+//                 </h3>
+//                 <div class="bg-base-100 rounded-full h-4">
+//                     <div class="bg-gradient-to-l from-[#BB73E0] to-[#FF8DDB] h-2.5 rounded-full" style="width: ${skill.per}%"></div>
+//                 </div>
+//         `
+//         skillsContainer.appendChild(skillContainer);
+//         console.log(skill.name, skill.per);
+//     });
+        
+// }
+// skillShow();
+    

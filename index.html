@@ -91,32 +91,22 @@
         </section>
         <!-- Home ends -->
         <!-- Portfolio Starts -->
+        
         <section id="portfolio" class="min-h-screen bg-base-200 px-6 py-4 rounded-lg my-8">
             <div class="flex-col text-info text-center">
                 <p class="text-info">Visit My Works</p>
                 <h1 class="text-5xl font-bold mt-4 uppercase">Portfolio</h1>
             </div>
+            <!-- Details of single project -->
+            <section id="details-section" class="mt-8">
+                <!-- DOM manipulated content -->
+            </section>
+            <!-- All projects -->
             <div class="grid lg:grid-cols-3 gap-4 mt-6 md:grid-cols-2">
                 <div class="card bg-base-100 shadow-xl image-full">
-                    <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Notelify</h2>
-                        <p>A note taking app that enables users to take, edit, and delete notes</p>
-                        <div class="card-actions justify-end">
-                            <a href="https://github.com/Tamema-TT/Notelify-Note-Taking-App" target="_blank">
-                                <button class="btn btn-secondary text-base-300">
-                                    <i class="fa-brands fa-github"></i>
-                                </button>
-                            </a>
-                            <a href="https://notelify-03.netlify.app/" target="_blank">
-                                <button class="btn btn-secondary text-base-300">Demo</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 shadow-xl image-full">
                     <figure><img class="rounded-xl" src="/images/e-commerce-bootstrap.jpg"  alt="Shoes" /></figure>
-                    <div class="card-body">
+                    <div class="card-body indicator">
+                        <span class="indicator-item indicator-end badge badge-success opacity-80 mt-4 mr-12">Responsive</span>
                         <h2 class="card-title">Sunshine E-commerce</h2>
                         <p>A responsive e-commerce site styled with bootstrap for buying baby products</p>
                         <div class="card-actions justify-end">
@@ -128,6 +118,44 @@
                             <a href="https://sunshine-e-commerce.netlify.app/" target="_blank">
                                 <button class="btn btn-secondary text-base-300">Demo</button>
                             </a>
+                            <button onclick="displayDetails('sunshine')" class="btn btn-secondary text-base-300">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img class="rounded-xl" src="/images/notelify-1.jpg"  alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Notelify</h2>
+                        <p>A note taking app that enables users to take, view, edit, and delete notes</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://github.com/Tamema-TT/Notelify-Note-Taking-App" target="_blank">
+                                <button class="btn btn-secondary text-base-300">
+                                    <i class="fa-brands fa-github"></i>
+                                </button>
+                            </a>
+                            <a href="https://notelify-03.netlify.app/" target="_blank">
+                                <button class="btn btn-secondary text-base-300">Demo</button>
+                            </a>
+                            <button onclick="displayDetails('notelify')" class="btn btn-secondary text-base-300">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img class="rounded-xl" src="/images/jo-chef-react.jpg"  alt="Shoes" /></figure>
+                    <div class="card-body indicator">
+                        <span class="indicator-item indicator-end badge badge-success opacity-80 mt-4 mr-12">Responsive</span>
+                        <h2 class="card-title">Jo Chef</h2>
+                        <p>An application that facilitates reservations and food orders at a restaurant</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://github.com/Tamema-TT/react-jo-chef" target="_blank">
+                                <button class="btn btn-secondary text-base-300">
+                                    <i class="fa-brands fa-github"></i>
+                                </button>
+                            </a>
+                            <a href="https://jo-chef-restaurant03.netlify.app/" target="_blank">
+                                <button class="btn btn-secondary text-base-300">Demo</button>
+                            </a>
+                            <button onclick="displayDetails('joChef')" class="btn btn-secondary text-base-300">Details</button>
                         </div>
                     </div>
                 </div>
@@ -145,12 +173,14 @@
                             <a href="https://closet-mania.netlify.app/" target="_blank">
                                 <button class="btn btn-secondary text-base-300">Demo</button>
                             </a>
+                            <button onclick="displayDetails('closetMania')" class="btn btn-secondary text-base-300">Details</button>
                         </div>
                     </div>
                 </div>
                 <div class="card bg-base-100 shadow-xl image-full">
                     <figure><img class="rounded-xl" src="/images/calculator-js.jpg"  alt="Shoes" /></figure>
-                    <div class="card-body">
+                    <div class="card-body indicator">
+                        <span class="indicator-item indicator-end badge badge-success opacity-80 mt-4 mr-12">Responsive</span>
                         <h2 class="card-title">Calculator</h2>
                         <p>A calculator built with Javascript and styled with tailwind css</p>
                         <div class="card-actions justify-end">
@@ -162,6 +192,7 @@
                             <a href="https://tamema-tt.github.io/js-simple-calculator/" target="_blank">
                                 <button class="btn btn-secondary text-base-300">Demo</button>
                             </a>
+                            <button onclick="displayDetails('calculator')" class="btn btn-secondary text-base-300">Details</button>
                         </div>
                     </div>
                 </div>
@@ -179,12 +210,14 @@
                             <a href="https://bank-deposit-withdraw-03.netlify.app/" target="_blank">
                                 <button class="btn btn-secondary text-base-300">Demo</button>
                             </a>
+                            <button onclick="displayDetails('banking')" class="btn btn-secondary text-base-300">Details</button>
                         </div>
                     </div>
                 </div>
                 <div class="card bg-base-100 shadow-xl image-full">
                     <figure><img class="rounded-xl" src="/images/expense-calculator-js.jpg"  alt="Shoes" /></figure>
-                    <div class="card-body">
+                    <div class="card-body indicator">
+                        <span class="indicator-item indicator-end badge badge-success opacity-80 mt-4 mr-12">Responsive</span>
                         <h2 class="card-title">Expense Calculator</h2>
                         <p>An app enabling users to calculate their expenses</p>
                         <div class="card-actions justify-end">
@@ -196,6 +229,7 @@
                             <a href="https://tamema-tt.github.io/js-expense-calculator/" target="_blank">
                                 <button class="btn btn-secondary text-base-300">Demo</button>
                             </a>
+                            <button onclick="displayDetails('expenseCalc')" class="btn btn-secondary text-base-300">Details</button>
                         </div>
                     </div>
                 </div>
@@ -360,9 +394,10 @@
         </section>
         <!-- Contact ends -->   
     </main>
-    <script src="/js/tab-button.js"></script>
-    <script src="/js/send-email.js"></script>
-    <script src="/js/toggle-nav.js"></script>
-    <script src="/js/skills.js"></script>
+    <script src="/js/project-details.js"></script> <!-- To display details of a project -->
+    <script src="/js/tab-button.js"></script> <!-- To toggle resume sections buttons -->
+    <script src="/js/send-email.js"></script> <!-- To send emails -->
+    <script src="/js/toggle-nav.js"></script> <!-- To toggle navbar items -->
+    <script src="/js/skills.js"></script> <!-- To display skills -->
 </body>
 </html>

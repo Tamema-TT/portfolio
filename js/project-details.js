@@ -43,7 +43,7 @@ const displayDetails = projectName => {
         if(projectName === detail.name)
         {
             detailsSection.innerHTML = `
-                <div class="card card-side grid grid-cols-3 bg-base-100 shadow-xl">
+                <div class="card card-side md:grid md:grid-cols-3 flex flex-col bg-base-100 shadow-xl">
                     <figure class="col-span-2"><img src=${detail.images[0]} alt="Movie"/></figure>
                     <div class="card-body">
                         <button onclick="closeDetails(false)" class="btn text-error w-16 ml-auto bg-base-100 border-0">
